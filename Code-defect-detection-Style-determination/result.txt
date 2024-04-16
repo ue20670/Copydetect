@@ -1,0 +1,11 @@
+************* Module test
+test.py:33:0: C0301: Line too long (120/100) (line-too-long)
+test.py:35:0: C0304: Final newline missing (missing-final-newline)
+test.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+test.py:5:0: C0116: Missing function or method docstring (missing-function-docstring)
+test.py:33:0: C0103: Constant name "input_file_path" doesn't conform to UPPER_CASE naming style (invalid-name)
+test.py:34:0: C0103: Constant name "output_directory" doesn't conform to UPPER_CASE naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 6.47/10 (previous run: 6.47/10, +0.00)
+

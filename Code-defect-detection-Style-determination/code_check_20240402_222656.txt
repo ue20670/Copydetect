@@ -1,0 +1,638 @@
+File: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadCompatality.py
+
+check_compatibility:
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadCompatality.py:21:17: E999 SyntaxError: invalid syntax
+第7行: 检测到可能特定于Linux的代码。问题代码: os.system('ls -l')
+第37行: 检测到可能特定于macOS的代码。问题代码: from AppKit import NSBeep
+=====
+
+check_logic:
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadCompatality.py:21:17: E999 SyntaxError: invalid syntax
+
+=====
+
+check_security_issues:
+Bandit analysis output:
+Run started:2024-04-02 14:26:56.531309
+
+Test results:
+	No issues identified.
+
+Code scanned:
+	Total lines of code: 35
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 0
+Files skipped (1):
+	D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadCompatality.py (syntax error while parsing AST from file)
+
+=====
+
+check_python_syntax:
+************* Module  --output-format=text
+ --output-format=text:1:0: F0001: No module named  --output-format=text (fatal)
+************* Module  --reports=no
+ --reports=no:1:0: F0001: No module named  --reports=no (fatal)
+************* Module  --score=no 
+ --score=no :1:0: F0001: No module named  --score=no  (fatal)
+************* Module BadCompatality
+TestFiles\BadCompatality.py:21:17: E0001: Parsing failed: 'invalid syntax (BadCompatality, line 21)' (syntax-error)
+
+=====
+
+check_style:
+************* Module BadCompatality
+21:17: Parsing failed: 'invalid syntax (BadCompatality, line 21)' (syntax-error)
+
+=====
+
+check_types:
+TestFiles\BadCompatality.py:21: error: invalid syntax  [syntax]
+Found 1 error in 1 file (errors prevented further checking)
+
+=====
+------------------------
+File: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadPerformance.py
+
+check_compatibility:
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadPerformance.py:8:1: E302 expected 2 blank lines, found 0
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadPerformance.py:14:1: E305 expected 2 blank lines after class or function definition, found 1
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadPerformance.py:15:14: W292 no newline at end of file
+=====
+
+check_logic:
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadPerformance.py:8:1: E302 expected 2 blank lines, found 0
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadPerformance.py:14:1: E305 expected 2 blank lines after class or function definition, found 1
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadPerformance.py:15:14: W292 no newline at end of file
+
+=====
+
+check_security_issues:
+Bandit analysis output:
+Run started:2024-04-02 14:26:57.970774
+
+Test results:
+	No issues identified.
+
+Code scanned:
+	Total lines of code: 11
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 0
+Files skipped (0):
+
+=====
+
+check_python_syntax:
+************* Module  --output-format=text
+ --output-format=text:1:0: F0001: No module named  --output-format=text (fatal)
+************* Module  --reports=no
+ --reports=no:1:0: F0001: No module named  --reports=no (fatal)
+************* Module  --score=no 
+ --score=no :1:0: F0001: No module named  --score=no  (fatal)
+************* Module BadPerformance
+TestFiles\BadPerformance.py:15:0: C0304: Final newline missing (missing-final-newline)
+TestFiles\BadPerformance.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+TestFiles\BadPerformance.py:1:0: C0103: Module name "BadPerformance" doesn't conform to snake_case naming style (invalid-name)
+TestFiles\BadPerformance.py:4:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+TestFiles\BadPerformance.py:8:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 4.44/10, -4.44)
+
+
+=====
+
+check_style:
+************* Module BadPerformance
+15:0: Final newline missing (missing-final-newline)
+1:0: Missing module docstring (missing-module-docstring)
+1:0: Module name "BadPerformance" doesn't conform to snake_case naming style (invalid-name)
+4:4: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+8:0: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 4.44/10 (previous run: 0.00/10, +4.44)
+
+
+=====
+
+check_types:
+Success: no issues found in 1 source file
+
+=====
+------------------------
+File: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py
+
+check_compatibility:
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:2:1: F401 'math' imported but unused
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:45:5: F841 local variable 'var1' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:46:5: F841 local variable 'var2' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:55:6: E703 statement ends with a semicolon
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:56:6: E703 statement ends with a semicolon
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:60:23: E703 statement ends with a semicolon
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:60:51: W292 no newline at end of file
+=====
+
+check_logic:
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:2:1: F401 'math' imported but unused
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:45:5: F841 local variable 'var1' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:46:5: F841 local variable 'var2' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:55:6: E703 statement ends with a semicolon
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:56:6: E703 statement ends with a semicolon
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:60:23: E703 statement ends with a semicolon
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:60:51: W292 no newline at end of file
+
+=====
+
+check_security_issues:
+Bandit analysis output:
+Run started:2024-04-02 14:26:59.480347
+
+Test results:
+	No issues identified.
+
+Code scanned:
+	Total lines of code: 30
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 0
+Files skipped (0):
+
+=====
+
+check_python_syntax:
+************* Module  --output-format=text
+ --output-format=text:1:0: F0001: No module named  --output-format=text (fatal)
+************* Module  --reports=no
+ --reports=no:1:0: F0001: No module named  --reports=no (fatal)
+************* Module  --score=no 
+ --score=no :1:0: F0001: No module named  --score=no  (fatal)
+************* Module TestFiles.BadStyle
+TestFiles\BadStyle.py:52:0: C0301: Line too long (216/100) (line-too-long)
+TestFiles\BadStyle.py:55:0: W0301: Unnecessary semicolon (unnecessary-semicolon)
+TestFiles\BadStyle.py:56:0: W0301: Unnecessary semicolon (unnecessary-semicolon)
+TestFiles\BadStyle.py:60:0: C0304: Final newline missing (missing-final-newline)
+TestFiles\BadStyle.py:60:0: W0301: Unnecessary semicolon (unnecessary-semicolon)
+TestFiles\BadStyle.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+TestFiles\BadStyle.py:1:0: C0103: Module name "BadStyle" doesn't conform to snake_case naming style (invalid-name)
+TestFiles\BadStyle.py:5:0: C0103: Constant name "BadGlobalVar" doesn't conform to UPPER_CASE naming style (invalid-name)
+TestFiles\BadStyle.py:16:8: C0103: Attribute name "LAST_NAME" doesn't conform to snake_case naming style (invalid-name)
+TestFiles\BadStyle.py:8:0: R0205: Class 'BadClassName' inherits from object, can be safely removed from bases in python3 (useless-object-inheritance)
+TestFiles\BadStyle.py:14:35: C0103: Argument name "LAST_name" doesn't conform to snake_case naming style (invalid-name)
+TestFiles\BadStyle.py:19:4: C0103: Method name "Bad_Method_Name" doesn't conform to snake_case naming style (invalid-name)
+TestFiles\BadStyle.py:19:33: C0103: Argument name "Y" doesn't conform to snake_case naming style (invalid-name)
+TestFiles\BadStyle.py:19:30: W0621: Redefining name 'x' from outer scope (line 55) (redefined-outer-name)
+TestFiles\BadStyle.py:28:8: W0621: Redefining name 'z' from outer scope (line 57) (redefined-outer-name)
+TestFiles\BadStyle.py:8:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+TestFiles\BadStyle.py:33:0: C0116: Missing function or method docstring (missing-function-docstring)
+TestFiles\BadStyle.py:40:0: C0103: Constant name "unused_var" doesn't conform to UPPER_CASE naming style (invalid-name)
+TestFiles\BadStyle.py:44:0: C0116: Missing function or method docstring (missing-function-docstring)
+TestFiles\BadStyle.py:45:4: W0612: Unused variable 'var1' (unused-variable)
+TestFiles\BadStyle.py:46:4: W0612: Unused variable 'var2' (unused-variable)
+TestFiles\BadStyle.py:49:0: C0103: Constant name "var3" doesn't conform to UPPER_CASE naming style (invalid-name)
+TestFiles\BadStyle.py:52:0: C0103: Constant name "long_line" doesn't conform to UPPER_CASE naming style (invalid-name)
+TestFiles\BadStyle.py:55:0: C0103: Constant name "x" doesn't conform to UPPER_CASE naming style (invalid-name)
+TestFiles\BadStyle.py:56:0: C0103: Constant name "y" doesn't conform to UPPER_CASE naming style (invalid-name)
+TestFiles\BadStyle.py:57:0: C0103: Constant name "z" doesn't conform to UPPER_CASE naming style (invalid-name)
+TestFiles\BadStyle.py:2:0: W0611: Unused import math (unused-import)
+
+-----------------------------------
+Your code has been rated at 0.00/10
+
+
+=====
+
+check_style:
+************* Module BadStyle
+52:0: Line too long (216/100) (line-too-long)
+55:0: Unnecessary semicolon (unnecessary-semicolon)
+56:0: Unnecessary semicolon (unnecessary-semicolon)
+60:0: Final newline missing (missing-final-newline)
+60:0: Unnecessary semicolon (unnecessary-semicolon)
+1:0: Missing module docstring (missing-module-docstring)
+1:0: Module name "BadStyle" doesn't conform to snake_case naming style (invalid-name)
+5:0: Constant name "BadGlobalVar" doesn't conform to UPPER_CASE naming style (invalid-name)
+16:8: Attribute name "LAST_NAME" doesn't conform to snake_case naming style (invalid-name)
+8:0: Class 'BadClassName' inherits from object, can be safely removed from bases in python3 (useless-object-inheritance)
+14:35: Argument name "LAST_name" doesn't conform to snake_case naming style (invalid-name)
+19:4: Method name "Bad_Method_Name" doesn't conform to snake_case naming style (invalid-name)
+19:33: Argument name "Y" doesn't conform to snake_case naming style (invalid-name)
+19:30: Redefining name 'x' from outer scope (line 55) (redefined-outer-name)
+28:8: Redefining name 'z' from outer scope (line 57) (redefined-outer-name)
+8:0: Too few public methods (1/2) (too-few-public-methods)
+33:0: Missing function or method docstring (missing-function-docstring)
+40:0: Constant name "unused_var" doesn't conform to UPPER_CASE naming style (invalid-name)
+44:0: Missing function or method docstring (missing-function-docstring)
+45:4: Unused variable 'var1' (unused-variable)
+46:4: Unused variable 'var2' (unused-variable)
+49:0: Constant name "var3" doesn't conform to UPPER_CASE naming style (invalid-name)
+52:0: Constant name "long_line" doesn't conform to UPPER_CASE naming style (invalid-name)
+55:0: Constant name "x" doesn't conform to UPPER_CASE naming style (invalid-name)
+56:0: Constant name "y" doesn't conform to UPPER_CASE naming style (invalid-name)
+57:0: Constant name "z" doesn't conform to UPPER_CASE naming style (invalid-name)
+2:0: Unused import math (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 0.36/10 (previous run: 0.36/10, +0.00)
+
+
+=====
+
+check_types:
+Success: no issues found in 1 source file
+
+=====
+------------------------
+File: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py
+
+check_compatibility:
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:30:16: E226 missing whitespace around arithmetic operator
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:38:5: E303 too many blank lines (7)
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:45:1: E303 too many blank lines (3)
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:46:1: W391 blank line at end of file
+=====
+
+check_logic:
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:30:16: E226 missing whitespace around arithmetic operator
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:38:5: E303 too many blank lines (7)
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:45:1: E303 too many blank lines (3)
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:46:1: W391 blank line at end of file
+
+=====
+
+check_security_issues:
+Bandit analysis output:
+Run started:2024-04-02 14:27:01.022188
+
+Test results:
+>> Issue: [B404:blacklist] Consider possible security implications associated with the subprocess module.
+   Severity: Low   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.7.8/blacklists/blacklist_imports.html#b404-import-subprocess
+   Location: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:1:0
+1	import subprocess
+2	import os
+3	
+
+--------------------------------------------------
+>> Issue: [B607:start_process_with_partial_path] Starting a process with a partial executable path
+   Severity: Low   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.7.8/plugins/b607_start_process_with_partial_path.html
+   Location: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:15:17
+14	    try:
+15	        result = subprocess.run(
+16	            ["pylint", "--output-format=text", "--reports=no", "--score=no", file_path],
+17	            capture_output=True,
+18	            text=True,
+19	            check=True
+20	        )
+21	    except subprocess.CalledProcessError as e:
+
+--------------------------------------------------
+>> Issue: [B603:subprocess_without_shell_equals_true] subprocess call - check for execution of untrusted input.
+   Severity: Low   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.7.8/plugins/b603_subprocess_without_shell_equals_true.html
+   Location: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:15:17
+14	    try:
+15	        result = subprocess.run(
+16	            ["pylint", "--output-format=text", "--reports=no", "--score=no", file_path],
+17	            capture_output=True,
+18	            text=True,
+19	            check=True
+20	        )
+21	    except subprocess.CalledProcessError as e:
+
+--------------------------------------------------
+
+Code scanned:
+	Total lines of code: 23
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 3
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 3
+Files skipped (0):
+
+=====
+
+check_python_syntax:
+************* Module  --output-format=text
+ --output-format=text:1:0: F0001: No module named  --output-format=text (fatal)
+************* Module  --reports=no
+ --reports=no:1:0: F0001: No module named  --reports=no (fatal)
+************* Module  --score=no 
+ --score=no :1:0: F0001: No module named  --score=no  (fatal)
+************* Module TestFiles.BadSyntax
+TestFiles\BadSyntax.py:39:0: C0301: Line too long (124/100) (line-too-long)
+TestFiles\BadSyntax.py:46:0: C0305: Trailing newlines (trailing-newlines)
+TestFiles\BadSyntax.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+TestFiles\BadSyntax.py:1:0: C0103: Module name "BadSyntax" doesn't conform to snake_case naming style (invalid-name)
+TestFiles\BadSyntax.py:5:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+
+
+=====
+
+check_style:
+************* Module BadSyntax
+39:0: Line too long (124/100) (line-too-long)
+46:0: Trailing newlines (trailing-newlines)
+1:0: Missing module docstring (missing-module-docstring)
+1:0: Module name "BadSyntax" doesn't conform to snake_case naming style (invalid-name)
+5:0: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 7.22/10 (previous run: 7.22/10, +0.00)
+
+
+=====
+
+check_types:
+Success: no issues found in 1 source file
+
+=====
+------------------------
+File: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py
+
+check_compatibility:
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:1:1: F401 'os' imported but unused
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:33:5: F841 local variable 'account_from' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:34:5: F841 local variable 'account_to' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:35:5: F841 local variable 'amount' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:68:33: W292 no newline at end of file
+第61行: 检测到可能特定于Linux的代码。问题代码: insecure_eval("os.system('ls')")  # 非常危险！执行了系统命令
+=====
+
+check_logic:
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:1:1: F401 'os' imported but unused
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:33:5: F841 local variable 'account_from' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:34:5: F841 local variable 'account_to' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:35:5: F841 local variable 'amount' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:68:33: W292 no newline at end of file
+
+=====
+
+check_security_issues:
+Custom security issues detected:
+Unsafe crypto method: ['md5']
+Unsafe eval/exec usage: ['eval']
+
+Bandit analysis output:
+Run started:2024-04-02 14:27:03.161954
+
+Test results:
+>> Issue: [B608:hardcoded_sql_expressions] Possible SQL injection vector through string-based query construction.
+   Severity: Medium   Confidence: Low
+   CWE: CWE-89 (https://cwe.mitre.org/data/definitions/89.html)
+   More Info: https://bandit.readthedocs.io/en/1.7.8/plugins/b608_hardcoded_sql_expressions.html
+   Location: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:15:12
+14	    cursor = conn.cursor()
+15	    query = f"SELECT * FROM users WHERE id={user_id}"  # SQL注入风险
+16	    cursor.execute(query)
+
+--------------------------------------------------
+>> Issue: [B307:blacklist] Use of possibly insecure function - consider using safer ast.literal_eval.
+   Severity: Medium   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.7.8/blacklists/blacklist_calls.html#b307-eval
+   Location: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:42:11
+41	def insecure_eval(expression):
+42	    return eval(expression)  # 不安全的eval使用
+43	
+
+--------------------------------------------------
+>> Issue: [B324:hashlib] Use of weak MD5 hash for security. Consider usedforsecurity=False
+   Severity: High   Confidence: High
+   CWE: CWE-327 (https://cwe.mitre.org/data/definitions/327.html)
+   More Info: https://bandit.readthedocs.io/en/1.7.8/plugins/b324_hashlib.html
+   Location: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:47:11
+46	def weak_encryption(password):
+47	    return hashlib.md5(password.encode()).hexdigest()  # 弱加密算法使用
+48	
+
+--------------------------------------------------
+>> Issue: [B201:flask_debug_true] A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code.
+   Severity: High   Confidence: Medium
+   CWE: CWE-94 (https://cwe.mitre.org/data/definitions/94.html)
+   More Info: https://bandit.readthedocs.io/en/1.7.8/plugins/b201_flask_debug_true.html
+   Location: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:58:4
+57	if __name__ == '__main__':
+58	    app.run(debug=True)
+59	
+
+--------------------------------------------------
+
+Code scanned:
+	Total lines of code: 42
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 0
+		Medium: 2
+		High: 2
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 1
+		Medium: 1
+		High: 2
+Files skipped (0):
+
+=====
+
+check_python_syntax:
+************* Module  --output-format=text
+ --output-format=text:1:0: F0001: No module named  --output-format=text (fatal)
+************* Module  --reports=no
+ --reports=no:1:0: F0001: No module named  --reports=no (fatal)
+************* Module  --score=no 
+ --score=no :1:0: F0001: No module named  --score=no  (fatal)
+************* Module InsecureCode
+TestFiles\InsecureCode.py:68:0: C0304: Final newline missing (missing-final-newline)
+TestFiles\InsecureCode.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+TestFiles\InsecureCode.py:1:0: C0103: Module name "InsecureCode" doesn't conform to snake_case naming style (invalid-name)
+TestFiles\InsecureCode.py:11:0: C0116: Missing function or method docstring (missing-function-docstring)
+TestFiles\InsecureCode.py:24:0: C0116: Missing function or method docstring (missing-function-docstring)
+TestFiles\InsecureCode.py:31:0: C0116: Missing function or method docstring (missing-function-docstring)
+TestFiles\InsecureCode.py:33:4: W0612: Unused variable 'account_from' (unused-variable)
+TestFiles\InsecureCode.py:34:4: W0612: Unused variable 'account_to' (unused-variable)
+TestFiles\InsecureCode.py:35:4: W0612: Unused variable 'amount' (unused-variable)
+TestFiles\InsecureCode.py:41:0: C0116: Missing function or method docstring (missing-function-docstring)
+TestFiles\InsecureCode.py:42:11: W0123: Use of eval (eval-used)
+TestFiles\InsecureCode.py:46:0: C0116: Missing function or method docstring (missing-function-docstring)
+TestFiles\InsecureCode.py:51:0: C0116: Missing function or method docstring (missing-function-docstring)
+TestFiles\InsecureCode.py:52:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+TestFiles\InsecureCode.py:62:4: C0103: Constant name "weak_hash" doesn't conform to UPPER_CASE naming style (invalid-name)
+TestFiles\InsecureCode.py:4:0: C0411: standard import "sqlite3" should be placed before third party import "flask.Flask" (wrong-import-order)
+TestFiles\InsecureCode.py:1:0: W0611: Unused import os (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 5.64/10, -5.64)
+
+
+=====
+
+check_style:
+************* Module InsecureCode
+68:0: Final newline missing (missing-final-newline)
+1:0: Missing module docstring (missing-module-docstring)
+1:0: Module name "InsecureCode" doesn't conform to snake_case naming style (invalid-name)
+11:0: Missing function or method docstring (missing-function-docstring)
+24:0: Missing function or method docstring (missing-function-docstring)
+31:0: Missing function or method docstring (missing-function-docstring)
+33:4: Unused variable 'account_from' (unused-variable)
+34:4: Unused variable 'account_to' (unused-variable)
+35:4: Unused variable 'amount' (unused-variable)
+41:0: Missing function or method docstring (missing-function-docstring)
+42:11: Use of eval (eval-used)
+46:0: Missing function or method docstring (missing-function-docstring)
+51:0: Missing function or method docstring (missing-function-docstring)
+52:9: Using open without explicitly specifying an encoding (unspecified-encoding)
+62:4: Constant name "weak_hash" doesn't conform to UPPER_CASE naming style (invalid-name)
+4:0: standard import "sqlite3" should be placed before third party import "flask.Flask" (wrong-import-order)
+1:0: Unused import os (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 5.64/10 (previous run: 0.00/10, +5.64)
+
+
+=====
+
+check_types:
+Success: no issues found in 1 source file
+
+=====
+------------------------
+File: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\TypeError.py
+
+check_compatibility:
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\TypeError.py:16:74: W292 no newline at end of file
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\TypeError.py:16:74: W292 no newline at end of file
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\TypeError.py:16:74: W292 no newline at end of file
+=====
+
+check_logic:
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\TypeError.py:16:74: W292 no newline at end of file
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\TypeError.py:16:74: W292 no newline at end of file
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\TypeError.py:16:74: W292 no newline at end of file
+
+=====
+
+check_security_issues:
+Bandit analysis output:
+Run started:2024-04-02 14:27:08.058871
+
+Test results:
+	No issues identified.
+
+Code scanned:
+	Total lines of code: 9
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 0
+Files skipped (0):
+
+=====
+
+check_python_syntax:
+************* Module  --output-format=text
+ --output-format=text:1:0: F0001: No module named  --output-format=text (fatal)
+************* Module  --reports=no
+ --reports=no:1:0: F0001: No module named  --reports=no (fatal)
+************* Module  --score=no 
+ --score=no :1:0: F0001: No module named  --score=no  (fatal)
+************* Module TestFiles.TypeError
+TestFiles\TypeError.py:16:0: C0304: Final newline missing (missing-final-newline)
+TestFiles\TypeError.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+TestFiles\TypeError.py:1:0: C0103: Module name "TypeError" doesn't conform to snake_case naming style (invalid-name)
+TestFiles\TypeError.py:2:0: C0116: Missing function or method docstring (missing-function-docstring)
+TestFiles\TypeError.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+
+
+=====
+
+check_style:
+************* Module TypeError
+16:0: Final newline missing (missing-final-newline)
+1:0: Missing module docstring (missing-module-docstring)
+1:0: Module name "TypeError" doesn't conform to snake_case naming style (invalid-name)
+2:0: Missing function or method docstring (missing-function-docstring)
+6:0: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 4.44/10 (previous run: 4.44/10, +0.00)
+
+
+=====
+
+check_types:
+TestFiles\TypeError.py:3: error: Incompatible return value type (got "str", expected "int")  [return-value]
+TestFiles\TypeError.py:10: error: Argument 2 to "add_numbers" has incompatible type "str"; expected "int"  [arg-type]
+TestFiles\TypeError.py:12: error: Incompatible types in assignment (expression has type "str", variable has type "int")  [assignment]
+Found 3 errors in 1 file (checked 1 source file)
+
+=====
+------------------------

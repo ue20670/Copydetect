@@ -1,0 +1,115 @@
+File: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadCompatality.py
+
+check_compatibility:
+
+警告：
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadCompatality.py:21:17: E999 SyntaxError: invalid syntax
+第7行: 检测到可能特定于Linux的代码。问题代码: os.system('ls -l')
+第37行: 检测到可能特定于macOS的代码。问题代码: from AppKit import NSBeep
+=====
+
+check_logic:
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadCompatality.py:21:17: E999 SyntaxError: invalid syntax
+
+=====
+------------------------
+File: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadPerformance.py
+
+check_compatibility:
+
+警告：
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadPerformance.py:8:1: E302 expected 2 blank lines, found 0
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadPerformance.py:14:1: E305 expected 2 blank lines after class or function definition, found 1
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadPerformance.py:15:14: W292 no newline at end of file
+=====
+
+check_logic:
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadPerformance.py:8:1: E302 expected 2 blank lines, found 0
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadPerformance.py:14:1: E305 expected 2 blank lines after class or function definition, found 1
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadPerformance.py:15:14: W292 no newline at end of file
+
+=====
+------------------------
+File: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py
+
+check_compatibility:
+
+警告：
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:2:1: F401 'math' imported but unused
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:45:5: F841 local variable 'var1' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:46:5: F841 local variable 'var2' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:55:6: E703 statement ends with a semicolon
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:56:6: E703 statement ends with a semicolon
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:60:23: E703 statement ends with a semicolon
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:60:51: W292 no newline at end of file
+=====
+
+check_logic:
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:2:1: F401 'math' imported but unused
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:45:5: F841 local variable 'var1' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:46:5: F841 local variable 'var2' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:55:6: E703 statement ends with a semicolon
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:56:6: E703 statement ends with a semicolon
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:60:23: E703 statement ends with a semicolon
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadStyle.py:60:51: W292 no newline at end of file
+
+=====
+------------------------
+File: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py
+
+check_compatibility:
+
+警告：
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:30:16: E226 missing whitespace around arithmetic operator
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:38:5: E303 too many blank lines (7)
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:45:1: E303 too many blank lines (3)
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:46:1: W391 blank line at end of file
+=====
+
+check_logic:
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:30:16: E226 missing whitespace around arithmetic operator
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:38:5: E303 too many blank lines (7)
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:45:1: E303 too many blank lines (3)
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\BadSyntax.py:46:1: W391 blank line at end of file
+
+=====
+------------------------
+File: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py
+
+check_compatibility:
+
+警告：
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:1:1: F401 'os' imported but unused
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:33:5: F841 local variable 'account_from' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:34:5: F841 local variable 'account_to' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:35:5: F841 local variable 'amount' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:68:33: W292 no newline at end of file
+第61行: 检测到可能特定于Linux的代码。问题代码: insecure_eval("os.system('ls')")  # 非常危险！执行了系统命令
+=====
+
+check_logic:
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:1:1: F401 'os' imported but unused
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:33:5: F841 local variable 'account_from' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:34:5: F841 local variable 'account_to' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:35:5: F841 local variable 'amount' is assigned to but never used
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\InsecureCode.py:68:33: W292 no newline at end of file
+
+=====
+------------------------
+File: D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\TypeError.py
+
+check_compatibility:
+
+警告：
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\TypeError.py:16:74: W292 no newline at end of file
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\TypeError.py:16:74: W292 no newline at end of file
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\TypeError.py:16:74: W292 no newline at end of file
+=====
+
+check_logic:
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\TypeError.py:16:74: W292 no newline at end of file
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\TypeError.py:16:74: W292 no newline at end of file
+D:\bishe\其他-代码-代码缺陷检测+风格判断+GUI\Code-defect-detection-Style-determination\TestFiles\TypeError.py:16:74: W292 no newline at end of file
+
+=====
+------------------------
