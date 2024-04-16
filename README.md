@@ -24,12 +24,16 @@ Open the config.py file in the file, in # test_file = r'D:\bishe\Others-Code-Cod
 2.pycharm
 # Information currently being viewed:
 https://github.com/blingenf/copydetect
+
 https://github.com/dodona-edu/dolos
+
 https://github.com/fyrestone/pycode_similar
 # Check related papers：
 References:
 [1] Schleimer S, Wilkerson D S, Aiken A. Winnowing: local algorithms for document fingerprinting[C]//Proceedings of the 2003 ACM SIGMOD international conference on Management of data. 2003: 76-85.
+
 [2] Chang, Hung-Fu, and Audris Mockus. "Evaluation of source code copy detection methods on freebsd." Proceedings of the 2008 international working            
 conference on Mining software repositories. 2008.
+
 [3] Roy, Chanchal K., James R. Cordy, and Rainer Koschke. "Comparison and evaluation of code clone detection techniques and tools: A qualitative   
 approach." Science of computer programming 74.7 (2009): 470-495.
