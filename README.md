@@ -19,7 +19,7 @@ These two parts together form a complete code plagiarism detection tool. The mai
 # Usage:
 Open the config.py file in the file, in # test_file = r'D:\bishe\Others-Code-Code Defect Detection+Style Judgment+GUI\Code-defect-detection-Style-determination\test.py', please Place the file that needs to be tested where the file is located, and then run the program to start testing.
 # Installation: (as easy as possible)
-To download the file to local, the following conditions are required to run:
+## To download the file to local, the following conditions are required to run:
 1.Python3.9
 2.pycharm
 # Information currently being viewed:
