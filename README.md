@@ -9,6 +9,13 @@ Code Copy detection：
 2. Currently, it only supports the python language. It will be continuously updated in the future to add java, C++ and other search languages.
 3. Simple operation page and download. During the investigation, many code detection tools of the same type had problems such as difficulty in downloading, system unsupported, and inability to recognize codes. So here I have simplified the download steps and designed a simple operation interface. Even if you are a novice, you can get started quickly and complete the task efficiently.
 4. For similar code segments, analysis reports will be provided to help you find duplicate content in the code and provide you with a basis for further improvement and editing of the code.
+Code Defect detection：
+1. There are many types of detection, which can comprehensively check various defects in the code and find out various problems in your own code.
+2. Real-time detection: high efficiency and speed, can quickly identify existing defects and errors
+3. Currently, only python language is supported, and more languages may be added later to achieve full language support.
+4. Intelligent repair suggestions: It can effectively point out the problem and the detailed error cause, which can help developers solve the problem quickly.
+5. Can generate detailed GUI reports to help developers improve code quality
+6． It can be used together with the code duplication detection in the first part to find duplication problems in the code and at the same time detect defects and errors in the code, thereby identifying the plagiarized parts of the code. This is more conducive to the implementation of academic integrity.
 # Usage:
 Open the config.py file in the file, in # test_file = r'D:\bishe\Others-Code-Code Defect Detection+Style Judgment+GUI\Code-defect-detection-Style-determination\test.py', please Place the file that needs to be tested where the file is located, and then run the program to start testing.
 # Installation: (as easy as possible)
