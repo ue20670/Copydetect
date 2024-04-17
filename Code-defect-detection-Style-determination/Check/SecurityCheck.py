@@ -5,30 +5,30 @@ from typing import List, Tuple
 
 from Config import *
 
-# 定义一些可能的安全问题模式
+# Define some possible security problem patterns
 UNSAFE_CRYPTO_METHODS = ['md5', 'sha1']
 UNSAFE_EVAL_METHODS = ['eval', 'exec']
 POTENTIAL_INJECTION_PATTERNS = [
-    r'(\W+)sql\W+\=',  # 潜在的SQL注入
-    r'(\W+)query\W+\(\W+\+',  # 另一个潜在的SQL注入
-    r'(\W+)html\W+\+',  # 潜在的HTML注入/XSS
+    r'(\W+)sql\W+\=',  # Potential SQL injection
+    r'(\W+)query\W+\(\W+\+',  # Another potential SQL injection
+    r'(\W+)html\W+\+',  # Potential HTML injection/XSS
 ]
 
 
 def find_potential_issues(file_content: str) -> List[Tuple[str, List[str]]]:
     issues = []
 
-    # 检测不安全的加密方法
+    # Detect insecure encryption methods
     for method in UNSAFE_CRYPTO_METHODS:
         if re.search(rf'\b{method}\b', file_content):
             issues.append(('Unsafe crypto method', [method]))
 
-            # 检测不安全的eval/exec使用
+            # Detect unsafe eval/exec usage
     for method in UNSAFE_EVAL_METHODS:
         if re.search(rf'\b{method}\(', file_content):
             issues.append(('Unsafe eval/exec usage', [method]))
 
-            # 检测潜在的注入攻击
+            # Detect potential injection attacks
     for pattern in POTENTIAL_INJECTION_PATTERNS:
         matches = re.findall(pattern, file_content)
         if matches:
@@ -39,7 +39,7 @@ def find_potential_issues(file_content: str) -> List[Tuple[str, List[str]]]:
 
 def run_bandit_analysis(file_path: str) -> str:
 
-    # 运行Bandit分析
+    # Run Bandit analysis
     completed_process = subprocess.run([BANDIT_DIR, '-r', file_path], capture_output=True, text=True,
                                        encoding= TEST_FILE_ENCODING)
     return completed_process.stdout
@@ -53,14 +53,14 @@ def check_security_issues(file_path: str) -> str:
     with open(file_path, 'r', encoding=TEST_FILE_ENCODING) as file:
         content = file.read()
 
-        # 使用自定义的正则表达式来检测潜在的安全问题
+        # Use custom regular expressions to detect potential security issues
         custom_issues = find_potential_issues(content)
         custom_issues_str = "\n".join([f"{issue[0]}: {issue[1]}" for issue in custom_issues])
 
-        # 使用Bandit进行更深入的安全分析
+        # Use Bandit for deeper security analysis
         bandit_output = run_bandit_analysis(file_path)
 
-        # 组合自定义和Bandit的分析结果
+        # Combine custom and Bandit analysis results
         if custom_issues_str:
             return f"Custom security issues detected:\n{custom_issues_str}\n\nBandit analysis output:\n{bandit_output}"
         else:

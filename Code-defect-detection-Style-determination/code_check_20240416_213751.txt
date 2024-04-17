@@ -1,0 +1,143 @@
+File: D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py
+
+check_compatibility:
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:32:1: E302 expected 2 blank lines, found 1
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:38:35: E226 missing whitespace around arithmetic operator
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:38:65: E226 missing whitespace around arithmetic operator
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:46:35: E226 missing whitespace around arithmetic operator
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:46:65: E226 missing whitespace around arithmetic operator
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:57:1: E302 expected 2 blank lines, found 1
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:76:1: E302 expected 2 blank lines, found 1
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:94:39: E221 multiple spaces before operator
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:113:35: E226 missing whitespace around arithmetic operator
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:113:65: E226 missing whitespace around arithmetic operator
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:119:35: E226 missing whitespace around arithmetic operator
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:119:65: E226 missing whitespace around arithmetic operator
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:141:11: W292 no newline at end of file
+=====
+
+check_logic:
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:32:1: E302 expected 2 blank lines, found 1
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:38:35: E226 missing whitespace around arithmetic operator
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:38:65: E226 missing whitespace around arithmetic operator
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:46:35: E226 missing whitespace around arithmetic operator
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:46:65: E226 missing whitespace around arithmetic operator
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:57:1: E302 expected 2 blank lines, found 1
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:76:1: E302 expected 2 blank lines, found 1
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:94:39: E221 multiple spaces before operator
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:113:35: E226 missing whitespace around arithmetic operator
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:113:65: E226 missing whitespace around arithmetic operator
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:119:35: E226 missing whitespace around arithmetic operator
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:119:65: E226 missing whitespace around arithmetic operator
+D:\Daily use software\快捷栏位置\桌面\Code-defect-detection-Style-determination\test\test-real.py:141:11: W292 no newline at end of file
+
+=====
+
+check_security_issues:
+Bandit analysis output:
+Run started:2024-04-16 20:37:52.880575
+
+Test results:
+	No issues identified.
+
+Code scanned:
+	Total lines of code: 99
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 0
+Files skipped (0):
+
+=====
+
+check_python_syntax:
+************* Module  --output-format=text
+ --output-format=text:1:0: F0001: No module named  --output-format=text (fatal)
+************* Module  --reports=no
+ --reports=no:1:0: F0001: No module named  --reports=no (fatal)
+************* Module  --score=no 
+ --score=no :1:0: F0001: No module named  --score=no  (fatal)
+************* Module test-real
+test\test-real.py:66:0: C0301: Line too long (108/100) (line-too-long)
+test\test-real.py:93:0: C0301: Line too long (105/100) (line-too-long)
+test\test-real.py:125:0: C0301: Line too long (114/100) (line-too-long)
+test\test-real.py:129:0: C0301: Line too long (118/100) (line-too-long)
+test\test-real.py:141:0: C0304: Final newline missing (missing-final-newline)
+test\test-real.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+test\test-real.py:1:0: C0103: Module name "test-real" doesn't conform to snake_case naming style (invalid-name)
+test\test-real.py:1:0: E0401: Unable to import 'cv2' (import-error)
+test\test-real.py:3:0: E0401: Unable to import 'numpy' (import-error)
+test\test-real.py:5:0: E0401: Unable to import 'my_lib' (import-error)
+test\test-real.py:29:0: C0103: Constant name "cascade_name" doesn't conform to UPPER_CASE naming style (invalid-name)
+test\test-real.py:32:0: C0116: Missing function or method docstring (missing-function-docstring)
+test\test-real.py:32:0: C0103: Function name "detectAndDisplay" doesn't conform to snake_case naming style (invalid-name)
+test\test-real.py:33:4: C0103: Variable name "dart_counter_VJ_HT" doesn't conform to snake_case naming style (invalid-name)
+test\test-real.py:40:16: C0103: Variable name "dart_counter_VJ_HT" doesn't conform to snake_case naming style (invalid-name)
+test\test-real.py:49:16: C0103: Variable name "dart_counter_VJ_HT" doesn't conform to snake_case naming style (invalid-name)
+test\test-real.py:57:0: C0116: Missing function or method docstring (missing-function-docstring)
+test\test-real.py:69:9: W0612: Unused variable 'x' (unused-variable)
+test\test-real.py:69:12: W0612: Unused variable 'y' (unused-variable)
+test\test-real.py:76:0: C0116: Missing function or method docstring (missing-function-docstring)
+test\test-real.py:76:0: R0914: Too many local variables (24/15) (too-many-locals)
+test\test-real.py:89:8: R1722: Consider using 'sys.exit' instead (consider-using-sys-exit)
+test\test-real.py:96:11: C0103: Variable name "counter_VJ_HT" doesn't conform to snake_case naming style (invalid-name)
+test\test-real.py:2:0: C0411: standard import "sys" should be placed before third party import "cv2" (wrong-import-order)
+
+-----------------------------------
+Your code has been rated at 0.00/10
+
+
+=====
+
+check_style:
+************* Module test-real
+66:0: Line too long (108/100) (line-too-long)
+93:0: Line too long (105/100) (line-too-long)
+125:0: Line too long (114/100) (line-too-long)
+129:0: Line too long (118/100) (line-too-long)
+141:0: Final newline missing (missing-final-newline)
+1:0: Missing module docstring (missing-module-docstring)
+1:0: Module name "test-real" doesn't conform to snake_case naming style (invalid-name)
+1:0: Unable to import 'cv2' (import-error)
+3:0: Unable to import 'numpy' (import-error)
+5:0: Unable to import 'my_lib' (import-error)
+29:0: Constant name "cascade_name" doesn't conform to UPPER_CASE naming style (invalid-name)
+32:0: Missing function or method docstring (missing-function-docstring)
+32:0: Function name "detectAndDisplay" doesn't conform to snake_case naming style (invalid-name)
+33:4: Variable name "dart_counter_VJ_HT" doesn't conform to snake_case naming style (invalid-name)
+40:16: Variable name "dart_counter_VJ_HT" doesn't conform to snake_case naming style (invalid-name)
+49:16: Variable name "dart_counter_VJ_HT" doesn't conform to snake_case naming style (invalid-name)
+57:0: Missing function or method docstring (missing-function-docstring)
+69:9: Unused variable 'x' (unused-variable)
+69:12: Unused variable 'y' (unused-variable)
+76:0: Missing function or method docstring (missing-function-docstring)
+76:0: Too many local variables (24/15) (too-many-locals)
+89:8: Consider using 'sys.exit' instead (consider-using-sys-exit)
+96:11: Variable name "counter_VJ_HT" doesn't conform to snake_case naming style (invalid-name)
+2:0: standard import "sys" should be placed before third party import "cv2" (wrong-import-order)
+
+------------------------------------------------------------------
+Your code has been rated at 5.50/10 (previous run: 0.00/10, +5.50)
+
+
+=====
+
+check_types:
+test\test-real.py:1: error: Cannot find implementation or library stub for module named "cv2"  [import-not-found]
+test\test-real.py:1: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-imports
+test\test-real.py:3: error: Cannot find implementation or library stub for module named "numpy"  [import-not-found]
+test\test-real.py:5: error: Cannot find implementation or library stub for module named "my_lib"  [import-not-found]
+Found 3 errors in 1 file (checked 1 source file)
+
+=====
+------------------------

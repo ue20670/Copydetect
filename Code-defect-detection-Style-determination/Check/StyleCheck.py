@@ -4,29 +4,29 @@ from Config import *
 
 def check_style(file_path):
     """
-    使用pylint检查Python文件的代码风格，并返回错误信息字符串。
+         Use pylint to check the code style of Python files and return an error message string.
 
-    :param file_path: 要检查的Python文件的路径。
-    :return: 错误信息字符串，如果没有错误则返回空字符串。
-    """
+         :param file_path: The path of the Python file to check.
+         :return: Error message string, if there is no error, an empty string is returned.
+         """
     # try:
-    # 使用pylint检查代码风格，并通过stdout获取输出
+    # Use pylint to check code style and get output through stdout
     result = subprocess.run(
         [PYLINT_DIR, '--msg-template="{line}:{column}: {msg} ({symbol})"', file_path],
         capture_output=True, text=True, encoding=TEST_FILE_ENCODING)
 
     return result.stdout
     # except subprocess.CalledProcessError as e:
-    #     # 如果pylint命令执行失败，返回错误信息
-    #     return str(e)
+    # # If the pylint command fails to execute, return an error message
+    # return str(e)
     # except FileNotFoundError:
-    #     # 如果找不到pylint，返回错误信息
-    #     return "pylint not found. Please make sure pylint is installed and available in your PATH."
+    # # If pylint is not found, return an error message
+    # return "pylint not found. Please make sure pylint is installed and available in your PATH."
     # except Exception as e:
-    #     # 返回其他异常信息
-    #     return str(e)
+    # # Return other exception information
+    # return str(e)
 
-    # 使用示例：检查test.py文件的代码风格
+    # Usage example: Check the code style of the test.py file
 
 if __name__ == '__main__':
     file_path = STYLE_CHECK_FILE_DIR

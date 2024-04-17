@@ -2,13 +2,13 @@ import subprocess
 import os
 from Config import *
 
-# 检测语法错误
+# Detect syntax errors
 def check_python_syntax(file_path):
     # 提取文件名和基本名（不带扩展名）
     file_name = os.path.basename(file_path)
     base_name = os.path.splitext(file_name)[0]
 
-    # 运行pylint并捕获输出
+    # Extract filename and basename (without extension)
     try:
         pylint_path = PYLINT_DIR
         result = subprocess.run(
@@ -25,6 +25,6 @@ def check_python_syntax(file_path):
     return result.stdout
 
 if __name__ == '__main__':
-    # 使用示例
+    # Usage example
     input_file_path = SYNTAX_CHECK_FILE_DIR
     check_python_syntax(input_file_path)

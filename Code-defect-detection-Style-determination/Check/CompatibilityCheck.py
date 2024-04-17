@@ -5,16 +5,16 @@ from subprocess import run, PIPE
 from Config import *
 
 def check_compatibility(file_path, requirements_path=None):
-    """  
-    检查Python文件的兼容性问题。  
-    :param file_path: Python文件的路径。  
-    :param requirements_path: requirements.txt文件的路径（可选）。  
-    :return: 包含错误信息的字符串。  
+    """
+         Check Python files for compatibility issues.
+         :param file_path: The path of the Python file.
+         :param requirements_path: The path to the requirements.txt file (optional).
+         :return: A string containing error information.
     """
     errors = []
     warnings = []
 
-    # 静态代码分析  
+    # Static code analysis
     static_analysis_result = run([FLAKE8_DIR, '--ignore=E501,W503', file_path], stdout=PIPE, stderr=PIPE, text=True
                                  , encoding=TEST_FILE_ENCODING)
     if static_analysis_result.stderr:
@@ -22,7 +22,7 @@ def check_compatibility(file_path, requirements_path=None):
     if static_analysis_result.stdout:
         warnings.extend(static_analysis_result.stdout.splitlines())
 
-        # 依赖检查  
+        # Dependency check
     if requirements_path:
         try:
             with open(requirements_path, 'r', encoding=TEST_FILE_ENCODING) as f:
@@ -34,14 +34,14 @@ def check_compatibility(file_path, requirements_path=None):
         except Exception as e:
             errors.append(f"无法读取requirements.txt文件：{e}")
 
-            # 特定于平台的代码检查  
+            # Platform-specific code inspections
     try:
         with open(file_path, 'r', encoding=TEST_FILE_ENCODING) as file:
             content = file.read()
 
-            # 检查Windows特定代码  
+            # Check for Windows specific code
             # if re.search(r'\bwin32\b|\bctypes\b|\bpywin32\b', content):
-            #     warnings.append("检测到可能特定于Windows的代码。")
+            # warnings.append("Possibly Windows-specific code detected.")
 
             lines = content.split('\n')  # 将内容按行分割
 
@@ -57,7 +57,7 @@ def check_compatibility(file_path, requirements_path=None):
     except Exception as e:
             errors.append(f"无法读取文件 {file_path}：{e}")
 
-    # 返回错误信息字符串
+    # Return error message string
     output = []
     if errors:
         output.append("错误：")
