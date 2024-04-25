@@ -4,7 +4,7 @@ def get_dir(dir1, dir2):
 # Test file encoding
 TEST_FILE_ENCODING = 'utf-8'
 
-# Python脚本地址
+# Python script address
 script_dir = r'D:\Python\Python39\Scripts'
 
 # Python script address
